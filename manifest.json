@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Steam Key Accepter",
+  "short_name": "SKA",
+  "description": "accept steam keys",
+  "version": "0.0.1",
+  "author": "Delight",
+  "content_scripts": [
+    {
+      "matches": ["https://store.steampowered.com/account/registerkey?*"],
+      "js": ["index.js"]
+    }
+  ],
+  "permissions": ["activeTab"]
+}
